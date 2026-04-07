@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header/Header";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -10,7 +11,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Crazy Penguin Wars",
-  description: "The classic and loved Crazy Penguin Wars is back",
+  description: "",
 };
 
 export default function RootLayout({
@@ -19,10 +20,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en" suppressHydrationWarning={true}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" suppressHydrationWarning={true}>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,0 +1,194 @@
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 850px;
+    width: 1200px;
+
+    background-image: url('/banner.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 0 0 96px 0;
+
+
+    .mainCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 340px;
+        align-items: center;
+        padding: 8px;
+        border-radius: 100px;
+        background-color: var(--foreground);
+        cursor: pointer;
+        transition: .2s ease-in-out;
+
+        &:hover {
+            -webkit-box-shadow: 0px 5px 15px 5px rgba(255, 255, 255, 0.22);
+            box-shadow: 0px 5px 15px 5px rgba(255, 255, 255, 0.22);
+            top: 335px;
+        }
+
+        img {
+            height: 24px;
+            margin: 0 0 0 8px;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 0 8px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+        }
+    }
+
+    .cardGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        width: 1200px;
+
+        .cardContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 24px;
+            border-radius: 16px;
+            background-color: var(--foreground);
+            color: white;
+            text-align: center;
+            outline: solid 1px var(--outline);
+
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            .cardTitle {
+                font-size: 26px;
+                font-weight: 600;
+                margin: 16px 0;
+            }
+
+        }
+    }
+}
+
+.galleryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 96px 0;
+
+    width: 1200px;
+
+    .sectionTitle {
+        font-size: 26px;
+        color: white;
+        font-weight: 600;
+        text-shadow: 1px 1px 1px black;
+        margin: 0 0 16px 0;
+    }
+
+    .cardGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        width: 1200px;
+
+        .cardContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 24px;
+            border-radius: 16px;
+            background-color: var(--foreground);
+            color: white;
+            text-align: center;
+            outline: solid 1px var(--outline);
+
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+.playContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 1200px;
+
+    .sectionTitle {
+        font-size: 26px;
+        color: white;
+        font-weight: 600;
+        text-shadow: 1px 1px 1px black;
+        margin: 0 0 16px 0;
+    }
+
+    .sectionDesc,
+    a {
+        font-size: 14px;
+        color: white;
+        font-weight: 500;
+        text-shadow: 1px 1px 1px black;
+
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            height: 24px;
+            margin: 0 0 0 4px;
+        }
+    }
+
+
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+
+        width: 1200px;
+
+        padding: 24px;
+        border-radius: 16px;
+        background-color: var(--foreground);
+        color: white;
+        outline: solid 1px var(--outline);
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+}
