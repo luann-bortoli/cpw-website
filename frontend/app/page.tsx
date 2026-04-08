@@ -1,89 +1,106 @@
+import Card from "@/components/card/Card";
 import styles from "./page.module.css";
 
 export default function Home() {
+
+  const featureCard = 
+  [
+    {
+    id: 1,
+    imgPath: "weapon.png",
+    title:"Wacky Weapons",
+    desc: "Choose from bazookas, grenades, water balloons, and more."
+  },
+  {
+    id: 2,
+    imgPath: "battle.png",
+    title:"Multiplayer Battles",
+    desc: "Challenge your friends and join global penguin tournaments."
+  },
+  {
+    id: 3,
+    imgPath: "customize.png",
+    title:"Customize Your Penguin",
+    desc: "Unlock outfits, accessories, and unique styles."
+  }
+ ]
+
+  const galleryCard = [
+    {
+      id: 1,
+      imgPath: "gallery1.png"
+    },
+    {
+      id: 2,
+      imgPath: "gallery2.png"
+    },
+    {
+      id: 3,
+      imgPath: "gallery3.png"
+    }
+  ]
+
   return (
     <>
       <div className={styles.heroContainer}>
 
         <div className={styles.mainCard}>
-          <a href="#play">PLAY
+          <a href="#play">
+            PLAY
             <img src="arrow-down.svg" alt="" />
           </a>
         </div>
 
-        <div id="features" className={styles.cardGrid}>
+        <div className={styles.cardGrid} id="features" >
 
-          <div className={styles.cardContainer}>
-            <img src="weapon.png" alt="" />
-            <p className={styles.cardTitle}>
-              Wacky Weapons
-            </p>
-            <p className={styles.cardDesc}>
-              Choose from bazookas, grenades, water balloons, and more.
-            </p>
-          </div>
-
-          <div className={styles.cardContainer}>
-            <img src="battle.png" alt="" />
-            <p className={styles.cardTitle}>
-              Multiplayer Battles
-            </p>
-            <p className={styles.cardDesc}>
-              Challenge your friends and join global penguin tournaments.
-            </p>
-          </div>
-
-          <div className={styles.cardContainer}>
-            <img src="customize.png" alt="" />
-            <p className={styles.cardTitle}>
-              Customize Your Penguin
-            </p>
-            <p className={styles.cardDesc}>
-              Unlock outfits, accessories, and unique styles.
-            </p>
-          </div>
+          {featureCard.map((card) => {
+            return (
+            <Card
+              key={card.id}
+              imgPath={card.imgPath}
+              title={card.title}
+              desc={card.desc}
+            />
+            )
+          })}
 
         </div>
       </div>
 
-      <div id="gallery" className={styles.galleryContainer}>
+      <div className={styles.galleryContainer} id="gallery" >
 
-        <div className={styles.sectionTitle}>
-          Gallery
-        </div>
+        <p className={styles.sectionTitle}>Gallery</p>
 
         <div className={styles.cardGrid}>
 
-          <div className={styles.cardContainer}>
-            <img src="gallery1.png" alt="" />
-          </div>
-
-          <div className={styles.cardContainer}>
-            <img src="gallery2.png" alt="" />
-          </div>
-
-          <div className={styles.cardContainer}>
-            <img src="gallery3.png" alt="" />
-          </div>
+         {galleryCard.map((card) => {
+          return(
+            <Card
+            key={card.id} 
+            imgPath={card.imgPath}
+            />
+          )
+         })}
 
         </div>
+
       </div>
 
-      <div id="play" className={styles.playContainer}>
+      <div className={styles.playContainer} id="play" >
 
-        <p className={styles.sectionTitle}>
-          Play
-        </p>
+        <p className={styles.sectionTitle}>Play</p>
 
-        <p className={styles.sectionDesc}>
-          Ready to dive into the icy battlefield? Click below to download the demo version.
-        </p>
+        <p className={styles.sectionDesc}>Ready to dive into the icy battlefield? Click below to download the demo version.</p>
 
-        <a href="#">Downlaod for Windowns <img src="download.svg" alt="" /></a>
+        <a download href="https://github.com/Crazy-Penguin-Wars/cpw-launcher/releases/download/1.0.0/Crazy.Penguin.Wars.1_0_0.zip">
+          Downlaod for Windowns
+          <img src="download.svg" alt="" />
+        </a>
 
         <div className={styles.cardContainer}>
           <video src="trailer.mp4" controls></video>
         </div>
+        
       </div>
 
       <div className={styles.faqContainer}>
