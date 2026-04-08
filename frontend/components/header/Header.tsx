@@ -18,7 +18,7 @@ export default function Header() {
                     </div>
 
                     <div className={styles.socialContainer}>
-                        <a href="#"><img src="discord.svg" alt="" /></a>
+                        <a href="https://discord.com/invite/PxxhzcbemQ" target='_blank'><img src="discord.svg" alt="" /></a>
                     </div>
 
                 </div>
