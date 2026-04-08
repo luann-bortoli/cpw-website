@@ -11,13 +11,15 @@ export default function Card({imgPath, title, desc}: CardProps ){
         <>
             <div className={s.cardContainer}>
             <img src={imgPath} alt="" />
-            <p className={s.cardTitle}>
-              {title}
-            </p>
-            <p className={s.cardDesc}>
-              
-              {desc}
-            </p>
+
+            {title ? 
+            <>
+              <p className={s.cardTitle}>{title}</p>
+              <p className={s.cardDesc}>{desc}</p>
+            </>
+            : null
+            }
+            
           </div>
         </>
     )
