@@ -86,6 +86,28 @@ export default function Home() {
         </div>
       </div>
 
+      <div className={styles.faqContainer}>
+        <div className={styles.containerTitle}>
+          <p>FAQ</p>
+        </div>
+        <div className={styles.faqGrid}>
+          <div className={styles.faqCard}>
+            <div className={styles.titleContainer}>
+
+              <img src="arrow-right-rounded.svg" alt="" />
+
+              <p className={styles.faqTitle}>
+                What is this project?
+              </p>
+
+            </div>
+            <div className={styles.faqDesc}>
+              Crazy Penguin Wars was a Facebook game. It shut down in 2015. Now, 10 years later, the goal of our project is to revive this awesome game!
+            </div>
+          </div>
+        </div>
+      </div>
+
     </>
   );
 }

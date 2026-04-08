@@ -135,6 +135,7 @@
     align-items: center;
 
     width: 1200px;
+    margin: 0 0 96px 0;
 
     .sectionTitle {
         font-size: 26px;
@@ -144,8 +145,7 @@
         margin: 0 0 16px 0;
     }
 
-    .sectionDesc,
-    a {
+    .sectionDesc {
         font-size: 14px;
         color: white;
         font-weight: 500;
@@ -159,9 +159,19 @@
         align-items: center;
         font-size: 20px;
         font-weight: 500;
+        color: var(--background);
+        padding: 6px 18px;
+        border-radius: 600px;
+        background-color: white;
+        transition: .2s ease-in-out;
+
+        margin: 24px 0;
 
         &:hover {
-            text-decoration: underline;
+            -webkit-box-shadow: 0px 5px 15px 5px rgba(255, 255, 255, 0.22);
+            box-shadow: 0px 5px 15px 5px rgba(255, 255, 255, 0.22);
+            margin: 16px 0 32px 0;
+            scale: 1.04;
         }
 
         img {
@@ -189,6 +199,59 @@
         video {
             width: 100%;
             border-radius: 8px;
+        }
+    }
+}
+
+.faqContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    flex-direction: column;
+
+    .containerTitle {
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+    }
+
+    img {
+        height: 24px;
+        margin: 0 8px 0 0;
+    }
+
+    .faqGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+        .faqCard {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 16px;
+            color: white;
+            background-color: var(--foreground);
+            border-radius: 12px;
+            border: solid 1px var(--outline);
+
+            .titleContainer {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .faqTitle {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                .faqDesc {
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+            }
         }
     }
 }
