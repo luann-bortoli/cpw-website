@@ -28,6 +28,7 @@
         background-color: var(--foreground);
         cursor: pointer;
         transition: .2s ease-in-out;
+        outline: solid 1px var(--outline);
 
         &:hover {
             -webkit-box-shadow: 0px 5px 15px 5px rgba(255, 255, 255, 0.22);
@@ -48,7 +49,7 @@
             margin: 0 8px;
             font-size: 16px;
             font-weight: 600;
-            color: white;
+        color: var(--text-light);
         }
     }
 
@@ -57,31 +58,6 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
         width: 1200px;
-
-        .cardContainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 24px;
-            border-radius: 16px;
-            background-color: var(--foreground);
-            color: white;
-            text-align: center;
-            outline: solid 1px var(--outline);
-
-            img {
-                width: 100%;
-                border-radius: 8px;
-            }
-
-            .cardTitle {
-                font-size: 26px;
-                font-weight: 600;
-                margin: 16px 0;
-            }
-
-        }
     }
 }
 
@@ -96,9 +72,9 @@
 
     .sectionTitle {
         font-size: 26px;
-        color: white;
+        color: var(--text-light);
         font-weight: 600;
-        text-shadow: 1px 1px 1px black;
+        text-shadow: var(--text-shadow);
         margin: 0 0 16px 0;
     }
 
@@ -107,24 +83,6 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
         width: 1200px;
-
-        .cardContainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 24px;
-            border-radius: 16px;
-            background-color: var(--foreground);
-            color: white;
-            text-align: center;
-            outline: solid 1px var(--outline);
-
-            img {
-                width: 100%;
-                border-radius: 8px;
-            }
-        }
     }
 }
 
@@ -139,17 +97,17 @@
 
     .sectionTitle {
         font-size: 26px;
-        color: white;
+        color: var(--text-light);
         font-weight: 600;
-        text-shadow: 1px 1px 1px black;
+        text-shadow: var(--text-shadow);
         margin: 0 0 16px 0;
     }
 
     .sectionDesc {
         font-size: 14px;
-        color: white;
+        color: var(--text-light);
         font-weight: 500;
-        text-shadow: 1px 1px 1px black;
+        text-shadow: var(--text-shadow);
 
     }
 
@@ -159,10 +117,10 @@
         align-items: center;
         font-size: 20px;
         font-weight: 500;
-        color: var(--background);
+        color: var(--text-dark);
         padding: 6px 18px;
         border-radius: 600px;
-        background-color: white;
+        background-color: var(--text-light);
         transition: .2s ease-in-out;
 
         margin: 24px 0;
@@ -180,27 +138,10 @@
         }
     }
 
-
-    .cardContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-
-        width: 1200px;
-
-        padding: 24px;
-        border-radius: 16px;
-        background-color: var(--foreground);
-        color: white;
-        outline: solid 1px var(--outline);
-
         video {
             width: 100%;
             border-radius: 8px;
         }
-    }
 }
 
 .faqContainer {
@@ -213,7 +154,7 @@
     .containerTitle {
         font-size: 24px;
         font-weight: 600;
-        color: white;
+        color: var(--text-light);
     }
 
     img {
@@ -232,7 +173,7 @@
             justify-content: center;
             align-items: flex-start;
             padding: 16px;
-            color: white;
+        color: var(--text-light);
             background-color: var(--foreground);
             border-radius: 12px;
             border: solid 1px var(--outline);
