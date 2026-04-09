@@ -1,11 +1,10 @@
-
-    .sectionTitle {
-        font-size: 26px;
-        color: var(--text-light);
-        font-weight: 600;
-        text-shadow: var(--text-shadow);
-        margin: var(--section-title-margin);
-    }
+.sectionTitle {
+    font-size: 26px;
+    color: var(--text-light);
+    font-weight: 600;
+    text-shadow: var(--text-shadow);
+    margin: var(--section-title-margin);
+}
 
 .heroContainer {
     display: flex;
@@ -13,7 +12,7 @@
     justify-content: flex-end;
     align-items: center;
 
-    height: 530px;
+    height: 650px;
     width: 1200px;
 
     background-image: url('/banner.jpg');
@@ -30,7 +29,7 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
-        top: 340px;
+        top: 450px;
         align-items: center;
         padding: 8px;
         border-radius: 100px;
@@ -42,7 +41,7 @@
         &:hover {
             -webkit-box-shadow: 0px 5px 15px 5px rgba(255, 255, 255, 0.22);
             box-shadow: 0px 5px 15px 5px rgba(255, 255, 255, 0.22);
-            top: 335px;
+            top: 440px;
         }
 
         img {
@@ -59,11 +58,11 @@
             margin: 0 8px;
             font-size: 16px;
             font-weight: 600;
-        color: var(--text-light);
+            color: var(--text-light);
         }
     }
 
-    .bottomContainer{
+    .bottomContainer {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -73,24 +72,24 @@
         padding: 8px;
         border-radius: 12px;
 
-        .titleWrapper{
+        .titleWrapper {
             display: flex;
             align-items: center;
 
-            img{
-            height: 30px;
-            border-radius: 8px;
-            margin: 0 8px 0 0;
+            img {
+                height: 30px;
+                border-radius: 8px;
+                margin: 0 8px 0 0;
+            }
+
+            .title {
+                font-size: 20px;
+                font-weight: 600;
+                color: var(--text-light);
+            }
         }
 
-        .title{
-            font-size: 20px;
-            font-weight: 600;
-            color: var(--text-light);
-        }
-        }
-
-        .desc{
+        .desc {
             font-size: 16px;
             font-weight: 400;
             color: var(--text-light);
@@ -99,7 +98,7 @@
     }
 }
 
-.featuresContainer{
+.featuresContainer {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -107,7 +106,7 @@
     width: 1200px;
     margin: var(--section-margin);
 
-    
+
     .cardGrid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -124,14 +123,6 @@
     margin: var(--section-margin);
 
     width: 1200px;
-
-    .sectionTitle {
-        font-size: 26px;
-        color: var(--text-light);
-        font-weight: 600;
-        text-shadow: var(--text-shadow);
-        margin: var(--section-title-margin);
-    }
 
     .cardGrid {
         display: grid;
@@ -169,7 +160,7 @@
         padding: 6px 18px;
         border-radius: 600px;
         background-color: var(--text-light);
-        transition: .2s ease-in-out;
+        transition: .2s ease-in-out !important;
 
         margin: 24px 0;
 
@@ -186,10 +177,10 @@
         }
     }
 
-        video {
-            width: 100%;
-            border-radius: 8px;
-        }
+    video {
+        width: 100%;
+        border-radius: 8px;
+    }
 }
 
 .faqContainer {
@@ -198,20 +189,14 @@
     align-items: center;
     width: 1200px;
     flex-direction: column;
-
-    .containerTitle {
-        font-size: 24px;
-        font-weight: 600;
-        color: var(--text-light);
-        margin: var(--section-title-margin);
-    }
+    margin: var(--section-margin);
 
     img {
         height: 24px;
         margin: 0 8px 0 0;
     }
 
-    .rowWrapper{
+    .rowWrapper {
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -222,16 +207,17 @@
             grid-template-columns: repeat(1, 1fr);
             width: 50%;
             gap: var(--gap-md);
-            
+
         }
 
-        .faqBanner{
+        .faqBanner {
             width: 50%;
             height: 328px;
             overflow: hidden;
-                border-radius: 16px;
-                margin: 0 0 0 16px;
-            img{
+            border-radius: 16px;
+            margin: 0 0 0 16px;
+
+            img {
                 height: 120%;
                 width: 100%;
                 border-radius: 16px;
