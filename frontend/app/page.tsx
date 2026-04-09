@@ -75,6 +75,22 @@ export default function Home() {
           </a>
         </div>
 
+        <div className={styles.bottomContainer}>
+          <div className={styles.titleWrapper}>
+            <img src="favicon.ico" alt="" />
+            <p className={styles.title}>Crazy Penguin Wars Revival</p>
+          </div>
+
+          <p className={styles.desc}>—</p>
+
+          <p className={styles.desc}>The legendary penguin shooter is back with classic chaos, new updates, and multiplayer battles</p>
+        </div>
+      </div>
+
+      <div className={styles.featuresContainer}>
+
+        <p className={styles.sectionTitle}>Game Features</p>
+
         <div className={styles.cardGrid} id="features" >
 
           {featureCard.map((card) => {
@@ -88,7 +104,7 @@ export default function Home() {
             )
           })}
 
-        </div>
+      </div>
       </div>
 
       <div className={styles.galleryContainer} id="gallery" >

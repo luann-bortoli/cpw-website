@@ -1,10 +1,19 @@
+
+    .sectionTitle {
+        font-size: 26px;
+        color: var(--text-light);
+        font-weight: 600;
+        text-shadow: var(--text-shadow);
+        margin: var(--section-title-margin);
+    }
+
 .heroContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
 
-    height: 850px;
+    height: 530px;
     width: 1200px;
 
     background-image: url('/banner.jpg');
@@ -39,6 +48,7 @@
         img {
             height: 24px;
             margin: 0 0 0 8px;
+
         }
 
         a {
@@ -53,6 +63,51 @@
         }
     }
 
+    .bottomContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: var(--foreground);
+        outline: solid 1px var(--outline);
+        padding: 8px;
+        border-radius: 12px;
+
+        .titleWrapper{
+            display: flex;
+            align-items: center;
+
+            img{
+            height: 30px;
+            border-radius: 8px;
+            margin: 0 8px 0 0;
+        }
+
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+        }
+
+        .desc{
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--text-light);
+            margin: 0 8px 0 0;
+        }
+    }
+}
+
+.featuresContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    margin: var(--section-margin);
+
+    
     .cardGrid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -95,13 +150,6 @@
     width: 1200px;
     margin: var(--section-margin);
 
-    .sectionTitle {
-        font-size: 26px;
-        color: var(--text-light);
-        font-weight: 600;
-        text-shadow: var(--text-shadow);
-        margin: var(--section-title-margin);
-    }
 
     .sectionDesc {
         font-size: 14px;
