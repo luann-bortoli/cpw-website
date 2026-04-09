@@ -1,5 +1,6 @@
 import Card from "@/components/card/Card";
 import styles from "./page.module.css";
+import DropdownCard from "@/components/dropdownCard/DropdownCard";
 
 export default function Home() {
 
@@ -37,6 +38,29 @@ export default function Home() {
     {
       id: 3,
       imgPath: "gallery3.png"
+    }
+  ]
+
+  const faqCard = [
+    {
+      id: 1,
+      title: "What is this project?",
+      desc: "Crazy Penguin Wars was a Facebook game. It shut down in 2015. Now, 10 years later, the goal of our project is to revive this awesome game!"
+    },
+    {
+      id: 2,
+      title: "Is Crazy Penguin Wars fully revived?",
+      desc: "Not yet. We're still working hard on it! At this moment you can only play a small demo, with only the offline practice mode being available. We hope to bring back multiplayer soon!"
+    },
+    {
+      id: 3,
+      title: "Can I still play it in the browser?",
+      desc: "No, because of the discontinuation of Adobe Flash Player, you have to download the game in order to play it. Check out the download link above!"
+    },
+    {
+      id: 4,
+      title: "Can I contribute to the project?",
+      desc: "Yes, definitely! In the first place we're looking for new developers that want to help rebuild the game server. However if coding is not your thing: we're also looking for, for example, Map Editors. Feel free to contact us in the Discord server!"
     }
   ]
 
@@ -100,29 +124,34 @@ export default function Home() {
         <div className={styles.cardContainer}>
           <video src="trailer.mp4" controls></video>
         </div>
-        
+
       </div>
 
-      <div className={styles.faqContainer}>
+      <div className={styles.faqContainer} id="faq">
         <div className={styles.containerTitle}>
           <p>FAQ</p>
         </div>
-        <div className={styles.faqGrid}>
-          <div className={styles.faqCard}>
-            <div className={styles.titleContainer}>
 
-              <img src="arrow-right-rounded.svg" alt="" />
+        <div className={styles.rowWrapper}>
+          <div className={styles.faqGrid}>
 
-              <p className={styles.faqTitle}>
-                What is this project?
-              </p>
+          {faqCard.map((card) => {
+            return(
+              <DropdownCard 
+                key={card.id}
+                title={card.title}
+                desc={card.desc}
+              />
+            )
+          })}
 
-            </div>
-            <div className={styles.faqDesc}>
-              Crazy Penguin Wars was a Facebook game. It shut down in 2015. Now, 10 years later, the goal of our project is to revive this awesome game!
-            </div>
-          </div>
         </div>
+
+        <div className={styles.faqBanner}>
+          <img src="money.png" alt="" />
+        </div>
+        </div>
+
       </div>
 
     </>

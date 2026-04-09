@@ -1,0 +1,39 @@
+.cardContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 16px;
+            color: var(--text-light);
+            background-color: var(--foreground);
+            border-radius: 12px;
+            border: solid 1px var(--outline);
+            cursor: pointer;
+                user-select: none;
+
+            .titleWrapper {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+
+                .cardTitle {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+            .cardDesc {
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin: 8px 0 0 0;
+                }
+        }
