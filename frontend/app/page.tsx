@@ -81,7 +81,7 @@ export default function Home() {
             <p className={styles.title}>Crazy Penguin Wars Revival</p>
           </div>
 
-          <p className={styles.desc}>—</p>
+          <p className={styles.desc} style={{margin: "0"}}>—</p>
 
           <p className={styles.desc}>The legendary penguin shooter is back with classic chaos, new updates, and multiplayer battles</p>
         </div>
