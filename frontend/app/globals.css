@@ -1,10 +1,20 @@
 :root {
+
+  /*cards && containers*/
   --background: #0f0f10;
   --foreground: #18181b;
   --outline: #313135;
+
+  /*text*/
   --text-dark: #0f0f10;
   --text-light: #fff;
   --text-shadow: 1px 1px 1px black;
+
+  /*structure*/
+  --gap-md: 24px;
+  --section-margin: 0 0 96px 0;
+  --section-title-margin: 0 0 16px 0;
+
 }
 
 html {
