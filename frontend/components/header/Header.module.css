@@ -59,6 +59,10 @@
 
             img {
                 height: 38px;
+                transition: .2s ease-in-out;
+            &:hover{
+                scale: 1.05;
+            }
             }
         }
     }
