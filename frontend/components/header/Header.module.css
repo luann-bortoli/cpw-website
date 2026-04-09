@@ -13,6 +13,7 @@
             rgba(0, 0, 0, 0.6) 90%,
             rgba(0, 0, 0, 0.7) 100%);
     backdrop-filter: blur(2px);
+    z-index: 9999;
 
     .mainContainer {
         display: flex;
@@ -28,8 +29,14 @@
             display: flex;
             align-items: center;
 
-            .logo {
-                height: 60px;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .logo {
+                    height: 60px;
+                }
             }
 
             ul {
@@ -43,10 +50,10 @@
                         padding: 0 12px;
                         font-weight: 500;
                         color: white;
-                        text-shadow: 1px 1px 1px black;
+                        text-shadow: var(--text-shadow);
 
                         &:hover {
-                            color: #f0f0f0;
+                            color: var(--text-light-h);
                         }
                     }
                 }
@@ -60,9 +67,10 @@
             img {
                 height: 38px;
                 transition: .2s ease-in-out;
-            &:hover{
-                scale: 1.05;
-            }
+
+                &:hover {
+                    scale: 1.05;
+                }
             }
         }
     }
