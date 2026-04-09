@@ -7,7 +7,7 @@ export default function Header() {
                 <div className={styles.mainContainer}>
 
                     <div className={styles.leftWrapper}>
-                        <img src="logo.png" alt="" className={styles.logo} />
+                        <a href="#home"><img src="logo.png" alt="" className={styles.logo} /></a>
 
                         <ul>
                             <li><a href="#features" className={styles.navLink}>Features</a></li>
