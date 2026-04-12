@@ -93,8 +93,10 @@ export default function Home() {
           </div>
 
           <p className={styles.desc} style={{ margin: "0" }}>—</p>
+          <p className={styles.descp} style={{ margin: "0" }}>—</p>
 
           <p className={styles.desc}>The legendary penguin shooter is back with classic chaos, new updates, and multiplayer battles</p>
+          <p className={styles.descp}>Enjoy the classic chaos with new updates</p>
         </div>
       </div>
 

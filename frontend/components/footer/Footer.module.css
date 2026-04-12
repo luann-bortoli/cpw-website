@@ -11,9 +11,48 @@
 
     .footerWrapper {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
         width: 1200px;
+
+        img {
+            height: 100px;
+
+            @media (max-width: 768px) {
+                height: 80px;
+            }
+
+
+
+            @media (max-width: 576px) {
+                height: 60px;
+            }
+        }
+
+        hr {
+            width: 100%;
+            border: none;
+            border-top: solid 1px var(--outline);
+            margin: 24px 0;
+        }
+
+        p {
+            width: 50%;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 14px;
+
+            @media (max-width: 768px) {
+                width: 78%;
+                font-size: 12px;
+            }
+
+
+
+            @media (max-width: 576px) {
+                font-size: 10px;
+            }
+        }
     }
 }

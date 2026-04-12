@@ -21,6 +21,27 @@
     background-position: top;
     margin: var(--section-margin);
 
+    @media (max-width: 1200px) {
+        height: 550px;
+        width: 992px;
+    }
+
+    @media (max-width: 992px) {
+        height: 420px;
+        width: 768px;
+    }
+
+    @media (max-width: 768px) {
+        height: 320px;
+        width: 576px;
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+        height: calc(100vw/2);
+        background-size: cover;
+        margin: 0 0 48px 0;
+    }
 
     .mainCard {
         display: flex;
@@ -38,16 +59,36 @@
         transition: .2s ease-in-out;
         outline: solid 1px var(--outline);
 
+        @media (max-width: 1200px) {
+            top: 400px;
+        }
+
+        @media (max-width: 992px) {
+            top: 300px;
+        }
+
+        @media (max-width: 768px) {
+            top: 220px;
+            padding: 4px;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
+
         &:hover {
             -webkit-box-shadow: 0px 5px 15px 5px rgba(255, 255, 255, 0.22);
             box-shadow: 0px 5px 15px 5px rgba(255, 255, 255, 0.22);
-            top: 440px;
+            top: 445px;
         }
 
         img {
             height: 24px;
             margin: 0 0 0 8px;
 
+            @media (max-width: 768px) {
+                height: 18px;
+            }
         }
 
         a {
@@ -59,6 +100,10 @@
             font-size: 16px;
             font-weight: 600;
             color: var(--text-light);
+
+            @media (max-width: 768px) {
+                font-size: 11px;
+            }
         }
     }
 
@@ -72,6 +117,12 @@
         padding: 8px;
         border-radius: 12px;
 
+        @media (max-width: 576px) {
+            padding: 4px;
+            justify-content: center;
+            border-radius: 6px;
+        }
+
         .titleWrapper {
             display: flex;
             align-items: center;
@@ -80,12 +131,32 @@
                 height: 30px;
                 border-radius: 8px;
                 margin: 0 8px 0 0;
+
+                @media (max-width: 992px) {
+                    height: 25px;
+                }
+
+                @media (max-width: 576px) {
+                    height: 16px;
+                }
             }
 
             .title {
                 font-size: 20px;
                 font-weight: 600;
                 color: var(--text-light);
+
+                @media (max-width: 1200px) {
+                    font-size: 17px;
+                }
+
+                @media (max-width: 992px) {
+                    font-size: 14px;
+                }
+
+                @media (max-width: 576px) {
+                    font-size: 10px;
+                }
             }
         }
 
@@ -94,6 +165,35 @@
             font-weight: 400;
             color: var(--text-light);
             margin: 0 8px 0 0;
+
+            @media (max-width: 1200px) {
+                font-size: 13px;
+            }
+
+            @media (max-width: 992px) {
+                font-size: 10px;
+            }
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        .descp {
+            font-size: 10px;
+            font-weight: 400;
+            color: var(--text-light);
+            margin: 0 8px 0 0;
+
+            display: none;
+
+            @media (max-width: 768px) {
+                display: inline;
+            }
+
+            @media (max-width: 576px) {
+                display: none;
+            }
         }
     }
 }
@@ -112,6 +212,25 @@
         grid-template-columns: repeat(3, 1fr);
         gap: var(--gap-md);
         width: 1200px;
+
+        @media (max-width: 1200px) {
+            width: 992px;
+
+        }
+
+        @media (max-width: 992px) {
+            width: 768px;
+        }
+
+        @media (max-width: 768px) {
+            width: 576px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media (max-width: 576px) {
+            width: 100vw;
+            padding: 16px;
+        }
     }
 }
 
@@ -129,6 +248,25 @@
         grid-template-columns: repeat(3, 1fr);
         gap: var(--gap-md);
         width: 1200px;
+
+        @media (max-width: 1200px) {
+            width: 992px;
+
+        }
+
+        @media (max-width: 992px) {
+            width: 768px;
+        }
+
+        @media (max-width: 768px) {
+            width: 576px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media (max-width: 576px) {
+            width: 100vw;
+            padding: 16px;
+        }
     }
 }
 
@@ -140,6 +278,25 @@
 
     width: 1200px;
     margin: var(--section-margin);
+
+    @media (max-width: 1200px) {
+        width: 992px;
+
+    }
+
+    @media (max-width: 992px) {
+        width: 768px;
+    }
+
+    @media (max-width: 768px) {
+        width: 576px;
+    }
+
+    @media (max-width: 576px) {
+        width: 100vw;
+        padding: 16px;
+        text-align: center;
+    }
 
 
     .sectionDesc {
@@ -191,6 +348,25 @@
     flex-direction: column;
     margin: var(--section-margin);
 
+    @media (max-width: 1200px) {
+        width: 992px;
+
+    }
+
+    @media (max-width: 992px) {
+        width: 768px;
+    }
+
+    @media (max-width: 768px) {
+        width: 576px;
+    }
+
+    @media (max-width: 576px) {
+        width: 100vw;
+        padding: 16px;
+        margin: 0 0 48px 0;
+    }
+
     img {
         height: 24px;
         margin: 0 8px 0 0;
@@ -208,6 +384,11 @@
             width: 50%;
             gap: var(--gap-md);
 
+            @media (max-width: 576px) {
+                width: 100%;
+                padding: 16px;
+            }
+
         }
 
         .faqBanner {
@@ -216,6 +397,23 @@
             overflow: hidden;
             border-radius: 16px;
             margin: 0 0 0 16px;
+
+
+            @media (max-width: 1200px) {
+                height: 308px;
+            }
+
+            @media (max-width: 992px) {
+                height: 260px;
+            }
+
+            @media (max-width: 768px) {
+                height: 216px;
+            }
+
+            @media (max-width: 576px) {
+                display: none;
+            }
 
             img {
                 height: 120%;
